@@ -1,0 +1,30 @@
+
+<html> 
+ <head> 
+   <title>Smart Room App</title> 
+   <link rel="stylesheet" href="/static/style.css" /> 
+ </head> 
+ <body> 
+   <h1>Smart Room Web App</h1> 
+ </body> 
+ <p>Message of the day: {{message}}</p>
+
+ <table>
+  <tr><td><button onclick="doLockRequest()">Lock</button></td></tr>
+  <tr>
+      <td><label>Light to turn on:</label></td>
+      <td><input type="text" id="lightId" name="lightId" value="light-01"></td>
+      <td><button onclick="doTurnOnRequest()">Turn On</button></td>
+  </tr>  
+  <tr>
+    <td><label>Light to inspect:</label></td>
+    <td><input type="text" id="lightId2" name="lightId2" value="light-01"></td>
+    <td><button onclick="doGetStateRequest()">Get State</button></td>
+    <td><p id="state"> - </p></td>
+</tr>  
+</table>
+
+
+ <script src="/static/app-business-logic.js" charset="utf-8"></script> 
+
+ </html> 
